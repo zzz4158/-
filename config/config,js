@@ -1,7 +1,0 @@
-export default {
-    singular: ture,
-    routes: [{
-        path: '/',
-        component:'./helloworld',
-    }]
-};

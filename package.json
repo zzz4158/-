@@ -12,6 +12,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "umi": "^2.6.17"
+    "umi": "^2.6.17",
+    "umi-plugin-react": "^1.7.6"
+  },
+  "dependencies": {
+    "antd": "^3.19.2",
+    "enquire-js": "^0.2.1",
+    "rc-banner-anim": "^2.2.7",
+    "rc-queue-anim": "^1.6.12",
+    "rc-scroll-anim": "^2.5.8",
+    "rc-tween-one": "^2.4.1"
   }
 }
