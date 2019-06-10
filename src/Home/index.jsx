@@ -2,14 +2,13 @@
 /* eslint arrow-parens: 0 */
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
-
-import Nav1 from './Nav1';
+import { BackTop} from 'antd'
+import MyNav from '../component/MyNav';
 import Banner1 from './Banner1';
 import Teams3 from './Teams3';
 import Footer2 from './Footer2';
 import Point from './Point';
 import {
-  Nav10DataSource,
   Banner10DataSource,
   Teams30DataSource,
   Footer20DataSource,
@@ -52,12 +51,10 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav1
-        id="Nav1_0"
-        key="Nav1_0"
-        dataSource={Nav10DataSource}
-        isMobile={this.state.isMobile}
-      />,
+      // <MyNav
+      //   id="Nav1_0"
+      //   key="Nav1_0"
+      // />,
       <Banner1
         id="Banner1_0"
         key="Banner1_0"
@@ -70,17 +67,20 @@ export default class Home extends React.Component {
         dataSource={Teams30DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Footer2
-        id="Footer2_0"
-        key="Footer2_0"
-        dataSource={Footer20DataSource}
-        isMobile={this.state.isMobile}
-      />, // 导航和页尾不进入锚点区，如果需要，自行添加;
+      // <Footer2
+      //   id="Footer2_0"
+      //   key="Footer2_0"
+      //   dataSource={Footer20DataSource}
+      //   isMobile={this.state.isMobile}
+      // />, // 导航和页尾不进入锚点区，如果需要，自行添加;
       <Point
         key="list"
         data={['Nav1_0', 'Banner1_0', 'Teams3_0', 'Footer2_0']}
         stroke="point-stroke"
       />,
+      <div>
+    {/* <BackTop /> */}
+  </div>
     ];
     return (
       <div

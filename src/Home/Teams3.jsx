@@ -13,7 +13,7 @@ class Teams3 extends React.PureComponent {
           <Row>
             <Col span={7}>
               <div {...image}>
-                <img src={image.children} alt="img" />
+                <a href={image.href}><img src={image.children} alt="img" /></a>
               </div>
             </Col>
             <Col span={17}>
@@ -62,6 +62,9 @@ class Teams3 extends React.PureComponent {
                 {listTopChildren}
               </QueueAnim>
               <Divider key="divider" />
+              <div {...dataSource.titleWrapper}>
+              <h1>二次元音乐</h1>
+              </div>
               <QueueAnim
                 type="bottom"
                 key="block"
