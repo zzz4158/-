@@ -6,6 +6,7 @@ import {Divider} from "antd";
 import {Layout} from "antd";
 import "./reg.css";
 import router from 'umi/router';
+import './background.css'
 
 const {Footer} = Layout;
 const FormItem = Form.Item;
@@ -135,8 +136,10 @@ class Registration extends React.Component {
             }
         };
 
-        return (
-            <div className="register">
+      return (
+        <div id='starBg'>
+          <div id="stars"></div>
+        <div className="register">
             <div className="welcomeRegister">
               <Divider>注册信息</Divider>
             </div>
@@ -270,7 +273,11 @@ class Registration extends React.Component {
                 </div>
             </Modal>
           </div>
-        );
+
+        </div>
+
+
+                   );
     }
 }
 

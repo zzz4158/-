@@ -79,6 +79,8 @@ class LoginDemo extends Component {
         const {phone, password} = this.state;
         const {getFieldDecorator} = this.props.form;
         return (
+          <div id='starBg'>
+          <div id="stars"></div>
           <div className="login">
                 <img id="logo"
                      src={logo}/>
@@ -114,11 +116,12 @@ class LoginDemo extends Component {
                 </Footer> */}
 
             </div>
+            </div>
         );
+        }
     }
-}
 
-const WrappedNormalLoginForm = Form.create()(LoginDemo);
+    const WrappedNormalLoginForm = Form.create()(LoginDemo);
 
-export default WrappedNormalLoginForm;
+    export default WrappedNormalLoginForm;
 
