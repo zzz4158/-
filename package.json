@@ -21,6 +21,7 @@
     "rc-banner-anim": "^2.2.7",
     "rc-queue-anim": "^1.6.12",
     "rc-scroll-anim": "^2.5.8",
-    "rc-tween-one": "^2.4.1"
+    "rc-tween-one": "^2.4.1",
+    "react-aplayer": "^1.0.0"
   }
 }

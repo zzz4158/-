@@ -66,19 +66,14 @@ export default {
         ]
       },
       {
-        // path: '/music',
-        // routes: [
-        //   {
+        path: '/music',
+        routes: [
+          {
             path: '/music',
-            component: '../page/puzzlecards',
+            component: '../page/music',
             title:'动漫家——音乐区',
-        //   },
-        //   {
-        //     path: '/music/:id',
-        //     component: '../page/music/$id',
-        //     title:'动漫家——音乐区',
-        //   }
-        // ]
+          },
+        ]
       },
       {
         path: '/sign',
