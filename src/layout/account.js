@@ -14,21 +14,25 @@ export default class BasicLayout extends Component {
           <Sider theme="light" breakpoint="lg" collapsible>
             <div className="logo"/>
             <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
-                <Menu.Item key="1">
-                    <Link to='/helloworld'>
-                              <Icon type="pie-chart" />
-                              <span>首页</span>
+                <Menu.Item key="0">
+                    <Link to='/'>
+                      <Icon type="pie-chart" />
+                       <span>首页</span>
                     </Link>
               </Menu.Item>
-              <SubMenu
-                key="sub1"
-                title={<span><Icon type="dashboard" /><span>Dashboard</span></span>}
-              >
-                 <Menu.Item key="2"><Link to="/account/dashboard/analysis">分析页</Link></Menu.Item>
-        <Menu.Item key="3"><Link to="/account/dashboard/monitor">监控页</Link></Menu.Item>
-        <Menu.Item key="4"><Link to="/account/dashboard/workplace">工作台</Link></Menu.Item>
+              <Menu.Item key="1">
+                    <Link to='/account'>
+                      <Icon type="pie-chart" />
+                       <span>用户中心</span>
+                    </Link>
+              </Menu.Item>
+              <Menu.Item key="2">
+                    <Link to='/account/setting'>
+                      <Icon type="pie-chart" />
+                       <span>修改信息</span>
+                    </Link>
+              </Menu.Item>
 
-              </SubMenu>
             </Menu>
           </Sider>
           <Layout >

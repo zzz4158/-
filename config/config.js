@@ -12,30 +12,6 @@ export default {
     }],
   ],
   routes: [
-
-    {
-      path: '/account',
-      component: '../layout/account',
-      routes: [
-        {
-          path: '/helloworld',
-          component: 'Helloworld'
-        },
-        {
-          path: 'puzzlecards',
-          component:'puzzlecards'
-        },
-        {
-          path: '/account/dashboard',
-          routes: [
-            { path: '/account/dashboard/analysis', component: 'Dashboard/Analysis' },
-            { path: '/account/dashboard/monitor', component: 'Dashboard/Monitor' },
-            { path: '/account/dashboard/workplace', component: 'Dashboard/Workplace' }
-          ]
-        },
-      ]
-    },
-
     {
     path: '/',
     component: '../layout/basic',
@@ -88,6 +64,16 @@ export default {
             component: '../page/sign/SignUp',
             title:'注册',
           }
+        ]
+      },
+      {
+        path: '/account',
+        component: '../layout/account',
+        routes: [
+          {
+            path: '/account/',
+            conponent:'../page/account'
+          },
         ]
       },
 

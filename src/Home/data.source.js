@@ -212,7 +212,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p1.music.126.net/5ErsmSshTKt5AKrXWUuqvw==/528865136464112.jpg?param=130y130',
-          href:'/music/0'
+          href:'/music/'
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -241,7 +241,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p2.music.126.net/zCWJLVIKMDzcTI6bHMdp1Q==/109951163573651083.jpg?param=130y130',
-          href:"/music/1"
+          href:"/music/"
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -270,7 +270,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p2.music.126.net/DjmKdzlQU7eXaGZ7H6lZmg==/109951163118580658.jpg?param=130y130',
-            href:"/music/2"
+            href:"/music/"
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -299,7 +299,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p1.music.126.net/KJSlCNw5LkUO_TzRsbwTNQ==/3263350512581176.jpg?param=130y130',
-          href:"/music/3",
+          href:"/music/",
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -328,7 +328,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p1.music.126.net/Tx8vVaU1tLPl__CkevMfKQ==/109951164021494660.jpg?param=130y130',
-          href:'/music/4'
+          href:'/music/'
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -357,7 +357,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p2.music.126.net/a0R0gpgnlpAWbXVLbKVxhA==/109951163641015775.jpg?param=130y130',
-          href:'/music/5'
+          href:'/music/'
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -386,7 +386,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p1.music.126.net/g6s-iioHTF6eiilP9reexQ==/19039143346587517.jpg?param=130y130',
-          href:'/music/6'
+          href:'/music/'
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -415,7 +415,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p2.music.126.net/yiyuZq6zuLxrMV1X-1MEOw==/7773547208889422.jpg?param=130y130',
-          href:'/music/7'
+          href:'/music/'
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
@@ -444,7 +444,7 @@ export const Teams30DataSource = {
           className: 'teams3-image',
           children:
             'http://p2.music.126.net/TXdH_qsA3L8Qlxt_acr4fw==/2412328511393200.jpg?param=130y130',
-          href:'/music/8'
+          href:'/music/'
         },
         titleWrapper: {
           className: 'teams3-textWrapper',
