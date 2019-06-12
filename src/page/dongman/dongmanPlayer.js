@@ -17,7 +17,7 @@ class dongmanPlayer extends Component {
     let list = [];
     for (let i = 0; i < dongmanSource[id].player.length; i++) {
       list.push(
-         <div style={{margin:'0 auto',height:'100%',textAlign:'center'}}>
+         <div style={{margin:'0px auto',height:'100%',textAlign:'center'}}>
           <a href={'/dongman/' + id + '/' + i} >第{i + 1}话</a>
          </div>
       );
@@ -49,11 +49,13 @@ class dongmanPlayer extends Component {
 
 
   render() {
-    const { id, player } = this.props.match.params;
+    const { id } = this.props.match.params;
+    const player=parseInt(this.props.match.params.player)
     if (id >= dongmanSource.length||player>=dongmanSource[id].player.length) {
       router.push('/404');
     }
     const data = dongmanSource[id];
+    console.log(typeof(player))
     return (
       <div style={{ margin: "0 auto", maxWidth: "1200px" }}>
         <Layout>

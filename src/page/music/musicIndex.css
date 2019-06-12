@@ -1,0 +1,8 @@
+.dongman-index-layout{
+  background-color: white;
+}
+.dongman-index-sider {
+  position: fixed; right: 0; }
+.dongman-index-content{
+  margin-right:15%;
+}
