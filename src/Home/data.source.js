@@ -4,7 +4,7 @@ import teamImg0 from '../asset/fateSN.jpg'
 import teamImg1 from '../asset/gmzr.png'
 import teamImg2 from '../asset/dzyz.png'
 
-import { Typography } from 'antd';
+import { Typography,Icon } from 'antd';
 const { Paragraph } = Typography;
 
 export const Nav10DataSource = {

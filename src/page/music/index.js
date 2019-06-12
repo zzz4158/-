@@ -6,7 +6,7 @@ import Link from "umi/link";
 import { List, Card, Input, Divider,Typography,Layout,Collapse,Checkbox,Button,Row,Col  } from "antd";
 import { musicSource } from './musicSource'
 import ReactAplayer from 'react-aplayer';
-import ColorThief from 'color-thief'
+// import ColorThief from '../../color-thief'
 
 import './musicIndex.css'
 
@@ -50,9 +50,9 @@ class MusicIndex extends Component {
       }
     }
   }
-  componentWillMount() {
-    window.localStorage.navSelect = 4;
-  }
+  // componentWillMount() {
+  //   window.localStorage.navSelect = 4;
+  // }
   state = {
     isMobile: false,//用于确定右侧边栏的样式
   }
@@ -65,7 +65,7 @@ class MusicIndex extends Component {
     this.setState({
       musicProps: musicProps,
     });
-    // console.log(this.onInit.ap)
+    // setTheme(this.ap.list.index);
     this.ap.list.clear(musicSource[id]);
     this.ap.list.add(musicSource[id])
     this.ap.play();
@@ -81,8 +81,18 @@ class MusicIndex extends Component {
   onPause = () => {
     // console.log('on pause');
   };
-  // onListadd = (props) => (props)
+  setTheme = (index) => {
 
+  }
+  onListswitch=(index) => {
+    const colorThief = new ColorThief();
+    console.log(index)
+    // if (!this.ap.list.audios[index].theme) {
+    //   colorThief.getColorAsync(this.ap.list.audios[index].cover, function (color) {
+    //         this.ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+    //     });
+    // }
+  }
 
 
   //返回列表元素
@@ -183,7 +193,7 @@ class MusicIndex extends Component {
         <div style={{position:'fixed',bottom:'80px',minWidth:'500px'}}>
         <ReactAplayer
           {...this.state.musicProps}
-          // onListadd={this.onListadd}
+          // onListswitch={this.onListswitch}
           onInit={this.onInit}
           onPlay={this.onPlay}
           onPause={this.onPause}
