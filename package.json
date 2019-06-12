@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "antd": "^3.19.2",
+    "color-thief": "^2.2.5",
     "enquire-js": "^0.2.1",
     "rc-banner-anim": "^2.2.7",
     "rc-queue-anim": "^1.6.12",
