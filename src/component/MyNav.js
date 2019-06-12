@@ -83,13 +83,14 @@ export default class Header extends Component {
   //处理用户退出
   logout = () => {
     // 因导航栏刷新问题暂未解决 不再使用dva
-    this.props.logout({
-      id: 0,
-      name: "未登录",
-      role: "guest"
-    });
 
-    window.localStorage.id = 0;
+    window.localStorage.clear();
+    // window.localStorage.id = 0;
+    this.props.logout({
+          id: 0,
+          name: "未登录",
+          role: "guest"
+        });
   };
 
   render() {

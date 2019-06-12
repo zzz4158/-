@@ -73,11 +73,11 @@ export default class Home extends React.Component {
       //   dataSource={Footer20DataSource}
       //   isMobile={this.state.isMobile}
       // />, // 导航和页尾不进入锚点区，如果需要，自行添加;
-      <Point
-        key="list"
-        data={['Nav1_0', 'Banner1_0', 'Teams3_0', 'Footer2_0']}
-        stroke="point-stroke"
-      />,
+      // <Point
+      //   key="list"
+      //   data={['Nav1_0', 'Banner1_0', 'Teams3_0', 'Footer2_0']}
+      //   stroke="point-stroke"
+      // />,
       <div>
     {/* <BackTop /> */}
   </div>

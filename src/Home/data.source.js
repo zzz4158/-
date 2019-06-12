@@ -502,9 +502,10 @@ export const Footer20DataSource = {
       {
         name: 'github',
         href: 'https://github.com/zzz4158/dongmanjia',
-        className: 'links-weibo',
+        className: '',
+        style:{lineHeight:'80px',fontSize:'25px',height:'80px'},
         children:
-         <Icon type="github" />,
+          <Icon type="github"/>,
       },
       // {
       //   name: 'zhihu',
