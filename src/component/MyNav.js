@@ -153,7 +153,7 @@ export default class Header extends Component {
         <SubMenu className="user" title={userTitle} key="user">
           <Item key="a">
             <Link to="/account/">用户中心</Link>
-          </Item>,
+          </Item>
           <Item key="c">
             <a
               onClick={() => {
@@ -162,7 +162,7 @@ export default class Header extends Component {
             >
               退出
             </a>
-          </Item>,
+          </Item>
           {/* <Item key="c"><Link to="">登出</Link></Item> */}
          </SubMenu>
       );

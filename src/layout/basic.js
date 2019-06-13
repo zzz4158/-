@@ -52,7 +52,9 @@ export default class basicLayout extends Component{
         <MyNav />
          {/* 导航栏属性为fixed 需要用此块占位 */}
         <div style={{width:'100%',height:'64px'}}></div>
-        <div style={{position:'relative',minHeight: document.body.clientHeight - 144}}>{this.props.children}</div>
+        <div style={{ position: 'relative', minHeight: document.body.clientHeight - 144 }}>
+          {this.props.children}
+        </div>
         <BackTop />
         <Footer2
         id="Footer2_0"

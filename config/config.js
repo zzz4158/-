@@ -15,7 +15,7 @@ export default {
     {
     path: '/',
     component: '../layout/basic',
-    routes: [
+      routes: [
       {
         path: '/',
       component: 'index',
@@ -71,8 +71,14 @@ export default {
         component: '../layout/account',
         routes: [
           {
-            path: '/account/',
-            conponent:'../page/account'
+            path: '/account',
+            component: '../page/account/UserHome',
+            title:'动漫家——用户中心',
+          },
+          {
+            path: '/account/setting',
+            component: '../page/account/Setting',
+            title:'动漫家——个人设置',
           },
         ]
       },
