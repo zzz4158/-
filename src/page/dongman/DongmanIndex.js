@@ -59,17 +59,17 @@ class DongmanIndex extends Component {
                 <List.Item>
                   <Card
                     title={
-                      <a href={item.href} style={{ color: "black" }}>
+                      <Link to={item.href} style={{ color: "black" }}>
                         {item.title}
-                      </a>
+                      </Link>
                     }
                   >
                     <div
                     // style={{ minHeight: '400px' }}
                     >
-                      <a href={item.href}>
+                      <Link to={item.href}>
                         <img src={item.img} alt="" width="100%" />
-                      </a>
+                      </Link>
                       <Paragraph ellipsis={{ rows: 1, expandable: true }}>
                         风格:{item.fengge}
                       </Paragraph>

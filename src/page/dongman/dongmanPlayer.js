@@ -18,7 +18,7 @@ class dongmanPlayer extends Component {
     for (let i = 0; i < dongmanSource[id].player.length; i++) {
       list.push(
          <div style={{margin:'0px auto',height:'100%',textAlign:'center'}}>
-          <a href={'/dongman/' + id + '/' + i} >第{i + 1}话</a>
+          <Link to={'/dongman/' + id + '/' + i} >第{i + 1}话</Link>
          </div>
       );
     }

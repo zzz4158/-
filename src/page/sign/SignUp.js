@@ -1,6 +1,7 @@
 import {
     Form, Input, Tooltip, Icon, Modal, Select, Row, Col, Checkbox, Button, AutoComplete,
 } from 'antd';
+import Link from 'umi/link';
 import React from "react";
 import {Divider} from "antd";
 import {Layout} from "antd";
@@ -246,7 +247,7 @@ class Registration extends React.Component {
                   required: true
                 })(
                   <Checkbox>
-                    我已阅读并同意<a href="">相关条例</a>
+                    我已阅读并同意<Link to="">相关条例</Link>
                   </Checkbox>
                 )}
               </Form.Item>

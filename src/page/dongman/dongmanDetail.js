@@ -30,7 +30,7 @@ export default class DongmanContent extends Component{
       for (let i = 0; i < dongmanSource[id].player.length; i++) {
         list.push(
           <div style={{marginTop:'12px',padding:'10px',border:'1px solid rgba(0,0,0,0.3)',textAlign:'center',borderRadius:'5px'}}>
-            <a href={'/dongman/' + id + '/' + i} >第{i + 1}话</a>
+            <Link to={'/dongman/' + id + '/' + i} >第{i + 1}话</Link>
           </div>
         );
       }

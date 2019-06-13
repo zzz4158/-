@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'umi/link';
 import QueueAnim from 'rc-queue-anim';
 import { Row, Col, Divider } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -13,7 +14,7 @@ class Teams3 extends React.PureComponent {
           <Row>
             <Col span={7}>
               <div {...image}>
-                <a href={image.href}><img src={image.children} alt="img" /></a>
+                <Link to={image.href}><img src={image.children} alt="img" /></Link>
               </div>
             </Col>
             <Col span={17}>

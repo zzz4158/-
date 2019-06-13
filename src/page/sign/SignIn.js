@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Link from 'umi/link';
 import {Form, Icon, Input, Button, message, Layout, } from 'antd';
 import { connect } from 'dva';
 import router from 'umi/router';
@@ -108,7 +109,7 @@ class LoginDemo extends Component {
                         <Button type="primary" htmlType="submit" className="login-form-button">
                             登录
                         </Button>
-                        或者<a href="/sign/up">注册账号！</a>
+                        或者<Link to="/sign/up">注册账号！</Link>
                     </FormItem>
                 </Form>
                 {/* <Footer style={{textAlign: 'center'}} className="footer">

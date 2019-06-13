@@ -3,7 +3,7 @@ import logo from '../asset/logo.png'
 import teamImg0 from '../asset/fateSN.jpg'
 import teamImg1 from '../asset/gmzr.png'
 import teamImg2 from '../asset/dzyz.png'
-
+import Link from 'umi/link';
 import { Typography,Icon } from 'antd';
 const { Paragraph } = Typography;
 
@@ -44,7 +44,7 @@ export const Banner10DataSource = {
           className: 'banner1-content',
           children: '这虽然是游戏，但可不是闹着玩的',
         },
-        button: { className: 'banner1-button', children: <a href='/dongman/0'>追番</a> },
+        button: { className: 'banner1-button', children: <Link to='/dongman/0'>追番</Link> },
       },
       {
         name: 'elem1',
@@ -62,7 +62,7 @@ export const Banner10DataSource = {
           className: 'banner1-content',
           children: '你指尖跃动的光芒，是我一生不变的信仰',
         },
-        button: { className: 'banner1-button', children: <a href='/dongman/1'>追番</a> },
+        button: { className: 'banner1-button', children: <Link to='/dongman/1'>追番</Link> },
       },
       {
         name: 'elem2',
@@ -78,7 +78,7 @@ export const Banner10DataSource = {
           className: 'banner1-content',
           children: '我真是HIGH到不行啦！',
         },
-        button: { className: 'banner1-button', children: <a href='/dongman/2'>追番</a> },
+        button: { className: 'banner1-button', children: <Link to='/dongman/2'>追番</Link> },
       },
     ],
   },
@@ -105,7 +105,7 @@ export const Teams30DataSource = {
               name: 'image',
               className: 'teams3-top-image',
               children:
-              <a href="/dongman/3"><img src={teamImg0} alt="img"/></a>,
+              <Link to="/dongman/3"><img src={teamImg0} alt="img"/></Link>,
             },
             {
               name: 'title',
@@ -139,7 +139,7 @@ export const Teams30DataSource = {
               name: 'image',
               className: 'teams3-top-image',
               children:
-                <a href="/dongman/4"><img src={teamImg1} alt="" /></a> ,
+                <Link to="/dongman/4"><img src={teamImg1} alt="" /></Link> ,
             },
             {
               name: 'title',
@@ -173,7 +173,7 @@ export const Teams30DataSource = {
               name: 'image',
               className: 'teams3-top-image',
               children:
-               <a href="dongman/5"><img src={teamImg2} alt=""/></a> ,
+               <Link to="dongman/5"><img src={teamImg2} alt=""/></Link> ,
             },
             {
               name: 'title',
@@ -480,7 +480,7 @@ export const Footer20DataSource = {
       // },
       {
         name: 'group',
-        children: <a href="https://github.com/zzz4158/dongmanjia/blob/master/README.md">开发环境</a>,
+        children: <Link to="https://github.com/zzz4158/dongmanjia/blob/master/README.md">开发环境</Link>,
         className: 'copyright-group',
       },
       {

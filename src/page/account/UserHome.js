@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Collapse, List, Typography, Row, Col,Card } from "antd";
 import { dongmanSource } from "../dongman/dongmanSource";
-
+import Link from 'umi/link';
 //使用antd组件
 const { Panel } = Collapse;
 const { Paragraph } = Typography;
@@ -34,14 +34,14 @@ class UserHome extends Component {
                   <Card style={{ maxWidth: "340px" }}>
                     <Row>
                       <Col span={8}>
-                        <a href={item.href}>
+                        <Link to={item.href}>
                           <img src={item.img} alt="" width="90%" />
-                        </a>
+                        </Link>
                       </Col>
                       <Col span={16}>
-                        <a href={item.href} style={{ color: "black" }}>
+                        <Link to={item.href} style={{ color: "black" }}>
                           <h2>{item.title}</h2>
-                        </a>
+                        </Link>
                         <Paragraph ellipsis={{ rows: 3, expandable: true }}>
                           简介：{item.jianjie}
                         </Paragraph>
@@ -62,15 +62,15 @@ class UserHome extends Component {
                   <Card style={{ maxWidth: "340px" }}>
                     <Row>
                       <Col span={8}>
-                        <a href={item.href}>
+                        <Link to={item.href}>
                           <img src={item.img} alt="" width="90%" />
-                        </a>
+                        </Link>
                       </Col>
                       <Col span={16}>
                         <div style={{marginLeft: "5px"}}>
-                        <a href={item.href} style={{ color: "black"}}>
+                        <Link to={item.href} style={{ color: "black"}}>
                           <h2>{item.title}</h2>
-                        </a>
+                        </Link>
                         <Paragraph ellipsis={{ rows: 3, expandable: true }}>
                           简介：{item.jianjie}
                         </Paragraph>
@@ -93,14 +93,14 @@ class UserHome extends Component {
                   <Card style={{ maxWidth: "340px" }}>
                     <Row>
                       <Col span={8}>
-                        <a href={item.href}>
+                        <Link to={item.href}>
                           <img src={item.img} alt="" width="90%" />
-                        </a>
+                        </Link>
                       </Col>
                       <Col span={16}>
-                        <a href={item.href} style={{ color: "black" }}>
+                        <Link to={item.href} style={{ color: "black" }}>
                           <h2>{item.title}</h2>
-                        </a>
+                        </Link>
                         <Paragraph ellipsis={{ rows: 3, expandable: true }}>
                           简介：{item.jianjie}
                         </Paragraph>
