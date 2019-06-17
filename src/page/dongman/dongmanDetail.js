@@ -20,10 +20,6 @@ const grid={
 
 
 export default class DongmanContent extends Component{
-  componentWillMount() {
-    window.localStorage.navSelect = 1;
-
-  }
     //返回列表元素
     renderPlayer = (id) => {
       let list = [];

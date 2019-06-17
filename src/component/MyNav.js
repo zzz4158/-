@@ -66,9 +66,6 @@ export default class Header extends Component {
       }, 500);
     }
   /* 如果不是 dva 2.0 请删除 end */
-    this.setState({
-      navSelect:window.localStorage.navSelect,
-    })
   }
 
   phoneClick = () => {
@@ -82,10 +79,6 @@ export default class Header extends Component {
 
   //处理用户退出
   logout = () => {
-    // 因导航栏刷新问题暂未解决 不再使用dva
-
-    window.localStorage.clear();
-    // window.localStorage.id = 0;
     this.props.logout({
           id: 0,
           name: "未登录",
@@ -103,6 +96,8 @@ export default class Header extends Component {
     const { menuHeight, phoneOpen } = this.state;
     const navData = dataSource.Menu.children;
     //读取菜单项的函数,使用这种方法渲染菜单后，点击导航栏会导致全局刷新，丢失用户登录状态，原因未查明。
+
+    //原因查明！！！使用Link代替a标签即可解决
     // const navChildren = Object.keys(navData).map((key, i) => (
     //   <Item
     //     // {...navData[key]}
@@ -135,10 +130,10 @@ export default class Header extends Component {
         <span className="img" {...user.img}>
           <img src={avatar} width="100%" height="100%" alt="userimg" />
         </span>
-        <span>{window.localStorage.name}</span>
+        <span>{user.name}</span>
       </div>
     );
-    if (window.localStorage.id == 0||window.localStorage.id == undefined) {
+    if (user.id == 0||user.id == undefined) {
       //未登录
       navChildren.push(
         <Item key="a">
@@ -221,7 +216,7 @@ export default class Header extends Component {
             >
               <Menu
                 mode={isMobile ? "inline" : "horizontal"}
-                // defaultSelectedKeys={[window.localStorage.navSelect]}
+                defaultSelectedKeys={['0']}
                 theme={isMobile ? "dark" : "default"}
               >
                 {navChildren}

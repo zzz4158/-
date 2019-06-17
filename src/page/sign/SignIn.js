@@ -46,15 +46,9 @@ class LoginDemo extends Component {
         }
 
   }
-  componentWillMount() {
-    window.localStorage.navSelect = 3;
-  }
 
     handleLogin = (e) => {
       e.preventDefault();
-      //由于导航栏刷新问题 不再使用dva
-      window.localStorage.id = 1;
-      window.localStorage.name = 'zhy';
       this.props.login(
         {
           id: 1,

@@ -16,9 +16,6 @@ const {Option} = Select;
 const AutoCompleteOption = AutoComplete.Option;
 
 class Registration extends React.Component {
-  componentWillMount() {
-    window.localStorage.navSelect = 4;
-  }
     state = {
         confirmDirty: false,
         autoCompleteResult: [],

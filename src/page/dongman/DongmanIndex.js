@@ -37,9 +37,6 @@ const grid={
 
 
 class DongmanIndex extends Component {
-  componentWillMount() {
-    window.localStorage.navSelect = 4;
-  }
   state = {
     isMobile: false,//用于确定右侧边栏的样式
   }
