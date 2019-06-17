@@ -97,9 +97,14 @@ export default class DongmanContent extends Component{
           </Col>
           <Col xs={24} sm={8} md={8} lg={6} >
             <Card title="角色声优" >
-              <p>角色A：xxx</p>
-              <p>角色A：xxx</p>
-              <p>角色A：xxx</p>
+            灶门炭治郎：花江夏树<br/>
+灶门祢豆子：鬼头明里<br/>
+我妻善逸：下野纮<br/>
+嘴平伊之助：松冈祯丞<br/>
+富冈义勇：樱井孝宏<br/>
+鳞泷左近次：大冢芳忠<br/>
+锖兔：梶裕贵<br/>
+真菰：加隈亚衣<br/>
             </Card>
           </Col>
         </Row>
@@ -111,9 +116,12 @@ export default class DongmanContent extends Component{
           </Col>
           <Col xs={24} sm={8} md={8} lg={6} >
             <Card title="STAFF" >
-              <p>角色A：xxx</p>
-              <p>角色A：xxx</p>
-              <p>角色A：xxx</p>
+            原作：吾峠呼世晴（集英社《周刊少年JUMP》连载）<br/>
+监督：外崎春雄<br/>
+角色设计：松岛晃<br/>
+副角色设计：佐藤美幸、梶山庸子、菊池美花<br/>
+脚本制作：ufotable<br/>
+概念美术：卫藤功二、矢中胜、竹内香纯、桦泽侑<br/>
             </Card>
           </Col>
         </Row>
