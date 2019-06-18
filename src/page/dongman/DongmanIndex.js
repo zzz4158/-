@@ -18,8 +18,7 @@ const grid={
   xs: 2,
   sm: 2,
   md: 3,
-  lg: 3,
-  xl: 6,
+  lg: 6,
 }
 //小屏的sider样式
 // const siderStyle1 = { position: 'fixed', right: '0', boxShadow: '10px #888888' };

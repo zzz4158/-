@@ -15,7 +15,6 @@ const grid={
   sm: 2,
   md: 3,
   lg: 4,
-  xl: 6,
 }
 
 
@@ -72,7 +71,7 @@ export default class DongmanContent extends Component{
             <Descriptions
               title={data.title}
               border
-              column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 1, xs: 1 }}
+              column={{  xl: 3, lg: 3, md: 3, sm: 1, xs: 1 }}
             >
               <Descriptions.Item label="风格">{this.renderFengge(data)}</Descriptions.Item>
               <Descriptions.Item label="开播时间">{data.kbsj}</Descriptions.Item>
