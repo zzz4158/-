@@ -481,7 +481,8 @@ export const Footer20DataSource = {
       // },
       {
         name: 'group',
-        children: <Link to="https://github.com/zzz4158/dongmanjia/blob/master/README.md">开发环境</Link>,
+        // children: <Link to="https://github.com/zzz4158/dongmanjia/blob/master/README.md">开发环境</Link>,
+        children:'动漫家',
         className: 'copyright-group',
       },
       {
